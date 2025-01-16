@@ -1,0 +1,42 @@
+.my-nav {
+  display: flex;
+  height: 75px;
+  background-color: #EB5A3C;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  border-bottom: 10px solid #ec816b;
+
+  h1 {
+    font-family: "Syne", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: italic;
+    color: antiquewhite;
+    font-size: 25px;
+    margin: 0px;
+  }
+
+  a {
+    font-family: "Inter", serif;
+    text-decoration: none;
+    color: antiquewhite;
+    margin-left: 10px;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+@media (min-width: 200px) and (max-width: 991.98px) {
+  .my-nav {
+    h1 {
+      font-size: 15px;
+    }
+
+    a {
+      font-size: 15px;
+    }
+  }
+}

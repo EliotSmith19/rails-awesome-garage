@@ -1,0 +1,19 @@
+<div class="my-container">
+  <ul>
+    <% @cars.each do |car| %>
+      <li class="car-card">
+        <div class="car-info">
+          <%= link_to car.brand, car_path(car) %>
+          <h4><%= car.model %></h4>
+          <p><%= car.created_at.strftime("%a %b %u at %H:%M") %></p>
+          <hr class="divider">
+        </div>
+        <%= image_tag "https://cimg0.ibsrv.net/ibimg/hgm/1920x1080-1/100/879/r34-nissan-skyline-gt-r-from-fast-and-furious-4--photo-credit-bonhams_100879624.jpg" %>
+        <div class="car-info">
+          <i class="fa-solid fa-comment"></i><%= link_to "Comment", new_car_review_path(car) %>
+        </div>
+         <p class="nickname-element"><%= car.owner.nickname %></p>
+      </li>
+    <% end %>
+  </ul>
+</div>

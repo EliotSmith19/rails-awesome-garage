@@ -1,0 +1,95 @@
+body {
+  background-color: antiquewhite;
+}
+
+.my-container {
+  margin: 30px auto;
+  width: 75%;
+}
+
+.car-card {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  background-color: white;
+  width: 75%;
+  position: relative;
+  box-shadow: 0px 0px 25px #eb593c57;
+
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  a {
+    text-decoration: none;
+    font-family: "Syne", serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #EB5A3C;
+    font-size: 25px;
+  }
+
+  h4 {
+    font-family: "Syne", serif;
+    font-weight: 800;
+    color: #EB5A3C;
+    font-size: 30px;
+  }
+}
+
+
+.car-info {
+  padding: 20px;
+
+  i {
+    color: #EB5A3C;
+    margin-right: 10px;
+  }
+
+  p {
+    color: grey;
+    font-style: italic;
+  }
+}
+
+.divider {
+  width: 100%;
+  color: #EB5A3C;
+  height: 5px;
+  border-bottom: 2px solid #ec816b;
+}
+
+
+.nickname-element {
+  background-color: #EB5A3C;
+  width: fit-content;
+  padding: 10px 15px;
+  border-radius: 20px;
+  color: antiquewhite;
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+  font-weight: 800;
+  font-style: italic;
+
+}
+
+
+@media (min-width: 200px) and (max-width: 991.98px) {
+  .car-card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 991.98px) {
+  .nickname-element {
+    font-size: 15px;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 45px;
+    right: 20px;
+  }
+}

@@ -1,5 +1,5 @@
 class Owner < ApplicationRecord
-  has_many :cars
+  has_many :cars, dependent: :destroy
 
-  validate :nickname, presence: true
+  validates :nickname, presence: true
 end
