@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'cars#index'
+  root 'cars#home'
 
   resources :cars, only: [:index, :show] do
     resources :reviews, only: [:new, :create]

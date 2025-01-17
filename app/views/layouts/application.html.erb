@@ -16,7 +16,9 @@
   </head>
 
   <body>
-    <%= render 'cars/navbar' %>
+    <% unless @hide_navbar %>
+      <%= render 'cars/navbar' %>
+    <% end %>
     <%= yield %>
   </body>
 </html>

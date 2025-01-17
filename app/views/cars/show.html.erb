@@ -1,13 +1,39 @@
-<h1><%= @car.brand %>/<%= @car.model %></h1>
-<%= link_to "Home", cars_path %>
-<%= link_to "Write a comment",  new_car_review_path(@car.id) %>
+<div class="my-container">
+  <div class="car-card">
+    <%= image_tag "https://cimg0.ibsrv.net/ibimg/hgm/1920x1080-1/100/879/r34-nissan-skyline-gt-r-from-fast-and-furious-4--photo-credit-bonhams_100879624.jpg" %>
+    <div class="info-form">
 
-<ul>
-  <% @car.reviews.each do |review| %>
-    <li><%= review.comment %> | <%= review.rating %>⭐</li>
-  <% end %>
-</ul>
+      <div class="show-info">
+        <h3><%= @car.brand %></h3>
+        <h4><%= @car.model %></h4>
+        <p><%= @car.year %> | <%= @car.fuel %></p>
+      </div>
 
-<%= simple_form_for [@car, @favourite ] do |f| %>
-  <%= f.submit 'Add to Garage' %>
-<% end %>
+      <div class="show-info">
+        <%= simple_form_for [@car, @review] do |f| %>
+          <%= f.input :comment %>
+          <%= f.input :rating %>
+          <%= f.submit %>
+        <% end %>
+      </div>
+
+      <hr class="divider">
+
+      <div class="reviews">
+        <h5>Reviews:</h5>
+        <ul>
+          <% @car.reviews.each do |review| %>
+            <li><%= review.comment %> <%= "⭐" * review.rating %></li>
+          <% end %>
+        </ul>
+      </div>
+
+      <hr class="divider">
+
+    </div>
+
+    <%= simple_form_for [@car, @favourite ] do |f| %>
+      <%= f.submit 'Add to Garage', class: "btn-add" %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+.info-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0px 0px 25px #eb593c69;
+}
+
+.show-info {
+  h3 {
+    font-family: "Syne", serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #EB5A3C;
+    font-size: 25px;
+  }
+
+  p {
+    color: grey;
+    font-style: italic;
+  }
+}
+
+.reviews {
+
+  ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  }
+}
+
+.btn-add {
+  background-color: #EB5A3C;
+  width: fit-content;
+  padding: 10px 15px;
+  border-radius: 20px;
+  color: antiquewhite;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  font-weight: 800;
+  font-style: italic;
+  border-color: #EB5A3C;
+
+  &:hover {
+    color: white;
+    border-color: white;
+  }
+}

@@ -7,5 +7,10 @@ class CarsController < ApplicationController
   def show
     @car = Car.find(params[:id])
     @favourite = Favourite.new
+    @review = Review.new
+  end
+
+  def home
+    @hide_navbar = true
   end
 end

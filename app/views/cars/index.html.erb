@@ -10,7 +10,7 @@
         </div>
         <%= image_tag "https://cimg0.ibsrv.net/ibimg/hgm/1920x1080-1/100/879/r34-nissan-skyline-gt-r-from-fast-and-furious-4--photo-credit-bonhams_100879624.jpg" %>
         <div class="car-info">
-          <i class="fa-solid fa-comment"></i><%= link_to "Comment", new_car_review_path(car) %>
+          <i class="fa-solid fa-comment"></i><%= link_to "Comment", car_path(car) %>
         </div>
          <p class="nickname-element"><%= car.owner.nickname %></p>
       </li>
