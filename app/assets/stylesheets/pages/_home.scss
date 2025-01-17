@@ -1,10 +1,13 @@
 body {
-  background-color: antiquewhite;
-  background-image: url('/assets/Background 1.png');
+  background-color: rgb(238, 238, 238);
+}
+
+#home-body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), image-url('orange-county.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh; /* Use 100vh to ensure it fills the full viewport height */
+  height: 100vh;
   width: 100vw;
 }
 
@@ -18,10 +21,9 @@ body {
   flex-direction: column;
   margin: 30px auto;
   background-color: white;
-  width: 75%;
+  width: 60%;
   position: relative;
-  box-shadow: 0px 0px 25px #eb593c;
-
+  box-shadow: 0px 0px 25px #00000064;
 
   img {
     width: 100%;
@@ -34,14 +36,14 @@ body {
     font-family: "Syne", serif;
     font-weight: 700;
     font-style: italic;
-    color: #EB5A3C;
+    color: #000000;
     font-size: 25px;
   }
 
   h4 {
     font-family: "Syne", serif;
     font-weight: 800;
-    color: #EB5A3C;
+    color: #FFEB00;
     font-size: 30px;
   }
 }
@@ -51,7 +53,7 @@ body {
   padding: 20px;
 
   i {
-    color: #EB5A3C;
+    color: #FFEB00;
     margin-right: 10px;
     font-size: 25px;
   }
@@ -62,24 +64,24 @@ body {
   }
 
   a:hover {
-    color: #fea08d;
+    color: #FFEB00;
   }
 }
 
 .divider {
   width: 100%;
-  color: #EB5A3C;
+  color: #FFEB00;
   height: 5px;
-  border-bottom: 2px solid #ec816b;
+  border-bottom: 2px solid #FFEB00;
 }
 
 
 .nickname-element {
-  background-color: #EB5A3C;
+  background-color: #FFEB00;
   width: fit-content;
   padding: 10px 15px;
   border-radius: 20px;
-  color: antiquewhite;
+  color: black;
   position: absolute;
   bottom: 40px;
   right: 20px;

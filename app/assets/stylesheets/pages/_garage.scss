@@ -4,7 +4,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  box-shadow: 0px 0px 25px #eb593c69;
+  box-shadow: 0px 0px 25px #00000090;
   position: relative;
 
   img {
@@ -20,14 +20,14 @@
     font-family: "Syne", serif;
     font-weight: 700;
     font-style: italic;
-    color: #EB5A3C;
+    color: black;
     font-size: 25px;
   }
 
   h4 {
     font-family: "Syne", serif;
     font-weight: 800;
-    color: #EB5A3C;
+    color: #FFEB00;
     font-size: 30px;
   }
 
@@ -40,11 +40,11 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    color: #EB5A3C;
+    color: black;
     font-size: 25px;
 
     &:hover {
-      color: #ec816b;
+      color: #FFEB00;
     }
   }
 }
@@ -54,10 +54,9 @@
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: italic;
-  color: antiquewhite;
+  color: rgb(0, 0, 0);
   font-size: 40px;
   margin: 30px auto;
-  text-shadow: -2px -2px 0px rgba(255, 255, 255, 0.456);
 }
 
 

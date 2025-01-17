@@ -4,7 +4,7 @@
   justify-content: space-between;
   padding: 30px;
   position: relative;
-  box-shadow: 0px 0px 25px #eb593c69;
+  box-shadow: 0px 0px 25px #000000a0;
 }
 
 .show-info {
@@ -12,7 +12,7 @@
     font-family: "Syne", serif;
     font-weight: 700;
     font-style: italic;
-    color: #EB5A3C;
+    color: black;
     font-size: 25px;
   }
 
@@ -32,20 +32,28 @@
 }
 
 .btn-add {
-  background-color: #EB5A3C;
+  background-color: #FFEB00;
   width: fit-content;
   padding: 10px 15px;
   border-radius: 20px;
-  color: antiquewhite;
+  color: black;
   position: absolute;
   top: 20px;
   right: 10px;
   font-weight: 800;
   font-style: italic;
-  border-color: #EB5A3C;
+  border-color: #FFEB00;
 
   &:hover {
     color: white;
     border-color: white;
   }
 }
+
+
+@media (min-width: 200px) and (max-width: 991.98px) {
+  .btn-add {
+      padding: 5px 10px;
+      font-size: 15px;
+    }
+  }

@@ -2,7 +2,7 @@
     <h1 id="garage-title">MY GARAGE</h1>
       <% @favourites.each do |favourite| %>
       <div class="garage-card">
-          <%= image_tag "https://cimg0.ibsrv.net/ibimg/hgm/1920x1080-1/100/879/r34-nissan-skyline-gt-r-from-fast-and-furious-4--photo-credit-bonhams_100879624.jpg" %>
+          <%= image_tag favourite.car.image_url %>
 
           <div class="garage-info">
             <h3><%= favourite.car.brand %></h3>

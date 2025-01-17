@@ -1,6 +1,6 @@
 <div class="my-container">
   <div class="car-card">
-    <%= image_tag "https://cimg0.ibsrv.net/ibimg/hgm/1920x1080-1/100/879/r34-nissan-skyline-gt-r-from-fast-and-furious-4--photo-credit-bonhams_100879624.jpg" %>
+    <%= image_tag @car.image_url %>
     <div class="info-form">
 
       <div class="show-info">
@@ -12,7 +12,7 @@
       <div class="show-info">
         <%= simple_form_for [@car, @review] do |f| %>
           <%= f.input :comment %>
-          <%= f.input :rating %>
+          <%= f.input :rating, collection: 1..5, prompt: "Select a rating" %>
           <%= f.submit %>
         <% end %>
       </div>
